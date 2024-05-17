@@ -36,13 +36,15 @@ void dataInput(int &n){
 
 int factorial(int n){
 
-    if(n == 1){
+    int auxiliar = n;
 
-        return n;
-    } else{
+    for (int i = 1; i < n; i++){
 
-        return n * factorial(n-1);
+
+        auxiliar*=i;
     }
+
+    return auxiliar;
 }
 
 void dataOutput(int n){

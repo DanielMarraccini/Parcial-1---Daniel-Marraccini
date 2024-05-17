@@ -3,15 +3,15 @@
 
 using namespace std;
 
-void dataInput(int &cantidad, string materias, float (&notas)[10], float (&ponderaciones)[10],
+void dataInput(int &cantidad, string materias, float (&notas)[15], float (&ponderaciones)[15],
                float &ponderacionesTotales);
 
-float promedioPonderado(int cantidad, float notas[10], float ponderaciones[10], float ponderacionesTotales);
+float promedioPonderado(int cantidad, float notas[15], float ponderaciones[15], float ponderacionesTotales);
 
 int main(){
 
     int cantidad;
-    float notas[10], ponderaciones[10], ponderacionesTotales = 0;
+    float notas[15], ponderaciones[15], ponderacionesTotales = 0;
     string materias;  //el nombre de las materias no se utiliza, pero se pide que se ingrese.
                         //En caso de que pidiera usarlos, utilizaría una matriz.
 
@@ -25,7 +25,7 @@ int main(){
     return 0;
 }
 
-void dataInput(int &cantidad, string materias, float (&notas)[10], float (&ponderaciones)[10],
+void dataInput(int &cantidad, string materias, float (&notas)[15], float (&ponderaciones)[15],
                float &ponderacionesTotales){
 
     cout<<"Ingrese la cantidad de materias: "; cin>>cantidad;
@@ -59,7 +59,7 @@ void dataInput(int &cantidad, string materias, float (&notas)[10], float (&ponde
     }
 }
 
-float promedioPonderado(int cantidad, float notas[10], float ponderaciones[10], float ponderacionesTotales){
+float promedioPonderado(int cantidad, float notas[15], float ponderaciones[15], float ponderacionesTotales){
 
     float total = 0;
 
